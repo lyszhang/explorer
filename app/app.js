@@ -62,6 +62,10 @@ angular.module('ethExplorer', ['ngRoute','ui.bootstrap','filters','ngSanitize'])
                 templateUrl: 'views/api/difficulty.html',
                 controller: 'chainInfosCtrl'
             }).
+            when('/wallet/', {
+                templateUrl: 'views/wallet.html',
+                controller: 'chainInfosCtrl'
+            }).
 /*
             // fast = doesn't need to getBlock any block
             when('/chain/blocknumber', {
